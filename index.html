@@ -11,8 +11,11 @@
               padding: 10px 10% !important;
               background-color: white;
           }
-          h1{
+          
+          p.heading{
+            font-size: 30px;
             font-weight: 900 !important;
+            text-align: center;
           }
           .col-md-6,.col-md-12{
               text-align: center;
@@ -25,6 +28,11 @@
           .col-md-6 p{
               text-align: center;
           }
+        @media screen and (max-width: 767px){
+            p.heading{
+                font-size: 20px;
+            }
+        }
       </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -37,14 +45,14 @@
   </head>
   <body>
    <section>
-       <div class="container">
+       <div class="container container1">
            <div class="row">
                <div class="col-md-12">
-                    <div><h1>SHOP NOW THANKS LATER</h1></div>
+                    <div><p class="heading">SHOP NOW THANKS LATER</p></div>
                </div>
            </div>
        </div>
-       <div class="container">
+       <div class="container container2">
         <div class="row">
             <div class="col-md-6">
                  <div>
@@ -82,11 +90,11 @@
            </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container container3">
         <div class="row">
             <div class="col-md-12">
                 <div>
-                    <img src="./market/market5.png" alt="footerImg" style=" width: 100%;padding: 20px 0;">
+                    <img src="./market/market5.png" alt="footerImg" style=" width: 100%;">
                 </div>
             </div>
         </div>

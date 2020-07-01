@@ -5,33 +5,60 @@
           section{
               background-color: #ece6e6;
           }
+          .main{
+              padding: 100px 0;
+          }
           .container{
               font-family: Segoe UI !important;
               font-weight: 700;
               padding: 10px 10% !important;
               background-color: white;
           }
-          
+          .container1{
+              padding-top: 0;
+              padding-bottom: 0;
+          }
+          .row1{
+              margin: 0 !important;
+          }
+          .row{
+            margin: 10px 0 10px 0;
+          }
           p.heading{
             font-size: 30px;
             font-weight: 900 !important;
             text-align: center;
+            margin-bottom: 0 !important;
           }
           .col-md-6,.col-md-12{
               text-align: center;
+              margin: 10px 0 10px 0;
           }
           img{
               width: 100%;
               height: auto;
               padding: 20px;
           }
-          .col-md-6 p{
-              text-align: center;
-          }
+          .card:hover{
+            box-shadow: 0 30px 18px -8px rgba(0, 0, 0, 0.1) ;
+            transform: scale(1.05,1.05);
+            transition: .5s;
+            }
+
         @media screen and (max-width: 767px){
+            .main{
+                padding: 0;
+            }
             p.heading{
                 font-size: 20px;
+                margin: 0;
             }
+            .row{
+            margin: 0 !important;
+          }
+          .container1{
+              padding: 0 !important;
+          }
         }
       </style>
     <!-- Required meta tags -->
@@ -45,60 +72,58 @@
   </head>
   <body>
    <section>
-       <div class="container container1">
-           <div class="row">
-               <div class="col-md-12">
+            <div class="main">
+                            <div class="container container1">
+            <div class="row row1">
+                <div class="col-md-12">
                     <div><p class="heading">SHOP NOW THANKS LATER</p></div>
-               </div>
-           </div>
-       </div>
-       <div class="container container2">
-        <div class="row">
-            <div class="col-md-6">
-                 <div>
-                     <img src="./market/market1.png" alt="">
                 </div>
-                <div>
+            </div>
+            </div>
+            <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+                    <div class="card">
+                        <img src="./market/market1.png" alt="">
+                
                     <p>UPTO 70% ON BESTSELLER TV</p>
                 </div>
             </div>
             <div class="col-md-6">
-                <div>
+                <div class="card">
                     <img src="./market/market2.png" alt="">
-                </div>
-                <div>
+                
                     <p>LOWEST PRICE ON BESTSELLER MOBILE</p>
                 </div>
-           </div>
-        </div>
-        <div class="row">
+            </div>
+            </div>
+            <div class="row">
             <div class="col-md-6">
-                 <div>
-                     <img src="./market/market3.png" alt="">
-                </div>
-                <div>
+                    <div class="card">
+                        <img src="./market/market3.png" alt="">
+                
                     <p>BEST WORK FROM HOME FURNITURES</p>
                 </div>
             </div>
             <div class="col-md-6">
-                <div>
+                <div class="card">
                     <img src="./market/market4.png" alt="">
-                </div>
-                <div>
+                
                     <p>UPTO 75% OFF SPEAKERS & HEADPHONES</p>
                 </div>
-           </div>
-        </div>
-    </div>
-    <div class="container container3">
-        <div class="row">
+            </div>
+            </div>
+            </div>
+            <div class="container container3">
+            <div class="row">
             <div class="col-md-12">
                 <div>
                     <img src="./market/market5.png" alt="footerImg" style=" width: 100%;">
                 </div>
             </div>
-        </div>
-    </div>
+            </div>
+            </div>
+            </div>
    </section>
 
     <!-- Optional JavaScript -->

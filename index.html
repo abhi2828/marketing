@@ -1,144 +1,156 @@
+
 <!doctype html>
 <html lang="en">
   <head>
       <style>
+        body{
+          margin: 0;
+          padding: 0;
+          font-family: Segoe UI !important;
+        }
           section{
-              background-color: #ece6e6;
+              /* background-color: #ece6e6; */
+              background-color: red;
+              height: 100vh;
           }
-          .main{
-              padding: 100px 0;
-          }
-          .container{
-              font-family: Segoe UI !important;
-              font-weight: 700;
-              padding: 10px 10% !important;
-              background-color: white;
-          }
-          .container1{
-              padding-top: 0;
-              padding-bottom: 0;
-          }
-          .row1{
-              margin: 0 !important;
-          }
-          .row{
-            margin: 10px 0 10px 0;
-          }
-          p.heading{
+          .header,.footer{
+            height: 10vh;
+            text-align: center;
             font-size: 30px;
             font-weight: 900 !important;
+          }
+          p{
             text-align: center;
-            margin-bottom: 0 !important;
+            font-size: 35px;
+            margin: 0 0 0 0;
           }
-          .col-md-6,.col-md-12{
-              text-align: center;
-              margin: 10px 0 10px 0;
+          .container{
+            padding: 10px 25%;
+            width: 50%;
+            background-color: white;
           }
-          img{
+          .card{
+            margin: 66px;
+            flex-grow: 1;
+          }
+          .row1{
+            height: 55vh;
+            background-color:turquoise;
+          }
+          .row{
+              border: 1px solid;
+              display: flex;
+          }
+          .col{
+              flex: 1;
+              background-color: white;
+              border: 1px solid;
+          }
+          .card img{
+            width: 100%;
+          }
+          .header img{
+            width: 80%;
+            height: inherit;
+          }
+
+          @media all and (max-width: 1024px){
+          .container {
+              padding: 10px 25%;
+              width: 62%;
+              background-color: white;
+          }
+        } 
+          @media all and (max-width: 768px){
+            .row{
+              flex-wrap: wrap !important;
+              display: block;
+            }
+            .card{
+              margin: 0px;
+            }
+            .container{
               width: 100%;
-              height: auto;
-              padding: 20px;
-          }
-          .card:hover{
-            box-shadow: 0 30px 18px -8px rgba(0, 0, 0, 0.1) ;
-            transform: scale(1.05,1.05);
-            transition: .5s;
-            }
-            p:hover{
-                color: #003975;
-            }
-            a{
-                text-decoration: none !important;
-            }
-        @media screen and (max-width: 767px){
-            .main{
-                padding: 0;
-            }
-            p.heading{
-                font-size: 20px;
-                margin: 0;
+              padding: 10px 0%;
             }
             .row{
-            margin: 0 !important;
-          }
-          .container1{
-              padding: 0 !important;
-          }
+              width: 100%;
+              height: auto;
+            }
+            .container2{
+              padding: 0px 0%;
+            }
+            .col2{
+              margin: -2px 0;
+            }
+            p{
+              margin: 20px 0;
+              font-size: 20px;
+            }
         }
+           
+
+
       </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
 
-    <title>Marketing</title>
+    <title>demo</title>
   </head>
   <body>
-   <section>
-            <div class="main">
-                            <div class="container container1">
-            <div class="row row1">
-                <div class="col-md-12">
-                    <div><p class="heading">SHOP NOW THANKS LATER</p></div>
+      <section>
+        <div class="container container1">
+          <div class="row header">
+              <div class="col">
+                <div class="card1"><p>SHOP NOW THANKS LATER</p></div>
+              </div>
+          </div>
+        </div>
+        <div class="container container2">
+          <div class="row row1">
+              <div class="col col2">
+                <div class="card"> 
+                  <img src="./market/market1.png" alt="">
+                  <p>content</p>
                 </div>
+              </div>
+              <div class="col col2">
+               <div class="card"> 
+                <img src="./market/market2.png" alt="">
+                <p>content</p>
+               </div>
             </div>
-            </div>
-            <div class="container">
-            <div class="row">
-            <div class="col-md-6">
-                <a href="https://www.flipkart.com/search?q=tv&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" target="_blank">
-                <div class="card">
-                    <img src="./market/market1.png" alt="">
-                    <p>UPTO 70% ON BESTSELLER TV</p>
+          </div>
+        </div>
+        <div class="container container2">
+          <div class="row row1">
+              <div class="col col2">
+                <div class="card"> 
+                  <img src="./market/market3.png" alt="">
+                  <p>content</p>
                 </div>
-                </a>
+              </div>
+              <div class="col col2">
+               <div class="card"> 
+                <img src="./market/market4.png" alt="">
+                <p>content</p>
+               </div>
             </div>
-            <div class="col-md-6">
-                <a href="https://www.flipkart.com/search?q=mobiles&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&as-pos=1&as-type=RECENT&suggestionId=mobiles%7CMobiles&requestId=ac6fd842-6036-4ef8-9443-054e63167a57&as-backfill=on" target="_blank">
-                  <div class="card">
-                    <img src="./market/market2.png" alt="">
-                    <p>LOWEST PRICE ON BESTSELLER MOBILE</p>
-                </div>  
-                </a>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-md-6">
-                <a href="https://www.flipkart.com/search?q=furniture+sofa+sets+wooden&sid=wwe%2Cc3z%2C0mv&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_12_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_12_na_na_na&as-pos=2&as-type=RECENT&suggestionId=furniture+sofa+sets+wooden%7CSofas+%26+Sectionals&requestId=33cd5fa9-6cfc-4c21-a990-7d09e8420e44&as-backfill=on" target="_blank"> 
-                    <div class="card">
-                        <img src="./market/market3.png" alt="">
-                        <p>BEST WORK FROM HOME FURNITURES</p>
-                    </div>
-                </a>                    
-            </div>
-            <div class="col-md-6">
-                <a href="https://www.flipkart.com/search?q=headphones&sid=0pm%2Cfcn&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&as-pos=1&as-type=RECENT&suggestionId=headphones%7CHeadphones+%26+Earphones&requestId=d4e38990-85ae-42a3-9cd1-49bfd4cfaf52&as-backfill=on" target="_blank">  
-                <div class="card">
-                    <img src="./market/market4.png" alt="">
-                    <p>UPTO 75% OFF SPEAKERS & HEADPHONES</p>
+          </div>
+        </div>
+        <div class="container container1">
+          <div class="row header">
+              <div class="col">
+                <div class="card1">                
+                  <img src="./market/market5.png" alt="">
                 </div>
-                </a>               
-            </div>
-            </div>
-            </div>
-            <div class="container container3">
-            <div class="row">
-            <div class="col-md-12">
-                <div>
-                    <img src="./market/market5.png" alt="footerImg" style=" width: 100%;">
-                </div>
-            </div>
-            </div>
-            </div>
-            </div>
-   </section>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  </body>
+              </div>
+          </div>
+        </div>
+      </section>
+</body>
 </html>

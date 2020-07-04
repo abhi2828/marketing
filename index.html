@@ -9,7 +9,6 @@
           font-family: Segoe UI !important;
         }
           section{
-              /* background-color: #ece6e6; */
               background-color: red;
               height: 100vh;
           }
@@ -30,11 +29,14 @@
             background-color: white;
           }
           .card{
-            margin: 66px;
+            margin: 20px;
             flex-grow: 1;
           }
+          .content{
+            font-size: 15px;
+          }
           .row1{
-            height: 55vh;
+            height: auto;
             background-color:turquoise;
           }
           .row{
@@ -53,7 +55,18 @@
             width: 80%;
             height: inherit;
           }
-
+          .card:hover{
+            box-shadow: 0 30px 18px -8px rgba(0, 0, 0, 0.1) ;
+            transform: scale(1.05,1.05);
+            transition: .5s;
+            }
+          a{
+              text-decoration: none !important;
+              color: rgb(63, 123, 190);
+          }
+          a:hover{
+            color: rgb(26, 52, 82);
+          }
           @media all and (max-width: 1024px){
           .container {
               padding: 10px 25%;
@@ -96,14 +109,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
-
     <title>demo</title>
   </head>
   <body>
       <section>
-        <div class="container container1">
+        <div>
+          <div class="container container1">
           <div class="row header">
               <div class="col">
                 <div class="card1"><p>SHOP NOW THANKS LATER</p></div>
@@ -113,32 +124,40 @@
         <div class="container container2">
           <div class="row row1">
               <div class="col col2">
-                <div class="card"> 
-                  <img src="./market/market1.png" alt="">
-                  <p>content</p>
-                </div>
+                <a href="https://abhi2828.github.io/marketing/market/market1.png">
+                  <div class="card"> 
+                    <img src="https://abhi2828.github.io/marketing/market/market1.png" alt="market1">
+                      <p class="content">UPTO 70% ON BESTSELLER TV</p>
+                  </div>
+                </a>
               </div>
               <div class="col col2">
-               <div class="card"> 
-                <img src="./market/market2.png" alt="">
-                <p>content</p>
-               </div>
+              <a href="https://abhi2828.github.io/marketing/market/market2.png">
+                <div class="card"> 
+                  <img src="https://abhi2828.github.io/marketing/market/market2.png" alt="market2">
+                      <p class="content">LOWEST PRICE ON BESTSELLER MOBILE</p>
+                 </div>
+              </a>
             </div>
           </div>
         </div>
         <div class="container container2">
           <div class="row row1">
               <div class="col col2">
+               <a href="https://abhi2828.github.io/marketing/market/market3.png">
                 <div class="card"> 
-                  <img src="./market/market3.png" alt="">
-                  <p>content</p>
+                  <img src="https://abhi2828.github.io/marketing/market/market3.png" alt="market3">
+                        <p class="content">BEST WORK FROM HOME FURNITURES</p>
                 </div>
+               </a>
               </div>
               <div class="col col2">
-               <div class="card"> 
-                <img src="./market/market4.png" alt="">
-                <p>content</p>
-               </div>
+               <a href="https://abhi2828.github.io/marketing/market/market4.png">
+                <div class="card"> 
+                  <img src="https://abhi2828.github.io/marketing/market/market4.png" alt="market4">
+                      <p class="content">UPTO 75% OFF SPEAKERS & HEADPHONES</p>
+                 </div>
+               </a>
             </div>
           </div>
         </div>
@@ -146,10 +165,11 @@
           <div class="row header">
               <div class="col">
                 <div class="card1">                
-                  <img src="./market/market5.png" alt="">
+                  <a href="https://abhi2828.github.io/marketing/market/market5.png">
                 </div>
               </div>
           </div>
+        </div>
         </div>
       </section>
 </body>
